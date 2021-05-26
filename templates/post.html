@@ -1,0 +1,10 @@
+<!-- templates/post.html -->
+{% extends 'home.html' %}
+
+{% block content %}
+<form class="mt-5 pt-5 ml-5 pl-5" method="post" action="">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Create</button>
+</form>
+{% endblock %}
